@@ -14,6 +14,15 @@
     <name>springboot-example</name>
     <description>Demo project for Spring Boot</description>
 
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>api</module>
+        <module>common</module>
+        <module>service-provider</module>
+        <module>service-consumer</module>
+    </modules>
+
     <properties>
         <java.version>1.8</java.version>
     </properties>
