@@ -7,7 +7,7 @@
 * [一、搭建Springboot多Module项目](#一搭建Springboot多Module项目)
 
 
-* [Q&A](#Q&A)
+* [Q&A](#踩坑与答疑)
 
 <!-- GFM-TOC -->
 
@@ -83,7 +83,7 @@
         </dependency>
 ```
 
-## Q&A
+## 踩坑与答疑
 - 1、rest请求404？
 
     controller包必须放在com.example.springlearningexample目录下，否则会报错404.
