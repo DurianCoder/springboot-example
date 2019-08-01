@@ -29,7 +29,7 @@
         <module>service-consumer</module>
     </modules>
 ```
-- 3、修改module pom.xl
+- 3、修改module pom.xml
    - 修改父项目
    - 修改packaging为jar
    - build引入配置文件
@@ -88,7 +88,7 @@
 ## 二、Springboot微服务数据库
 ### 0x01、Springboot整合Mybatis
 #### 1、使用Mybatis-Generator生成数据访问层
-- 添加generatorConfig.xml文件，修改数据库连接信息
+- 在src/main/resources下添加generatorConfig.xml文件，修改数据库连接信息
 - 修改pom.xml， 添加plugin
 ```
     <plugin>
@@ -127,8 +127,8 @@
 ```
 - 配置Maven生成实体和mapper:
 ```
-# 配置到Module目录
-mybatis-generator:generate
+# Working directory配置到Module目录
+Command Line: mybatis-generator:generate
 ```
 
 
