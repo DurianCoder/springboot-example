@@ -53,3 +53,6 @@
         </resources>
     </build>
 ```
+项目结构如下：
+
+<img src="https://raw.githubusercontent.com/DurianCoder/Picture-Hub/master/notes/imgs/多Module项目结构.png">
