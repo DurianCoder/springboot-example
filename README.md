@@ -7,7 +7,7 @@
 
 * [二、Springboot微服务数据库](#二Springboot微服务数据库)
     * [0x01、Springboot整合Mybatis](#0x01Springboot整合Mybatis)
-        * [1、使用Mybatis Generator生成对应的实体类和mapper](#1使用Mybatis Generator生成对应的实体类和mapper)
+        * [1、使用Mybatis-Generator生成数据访问层](#1使用Mybatis-Generator生成数据访问层)
 
 * [Q&A](#踩坑与答疑)
 
@@ -87,7 +87,7 @@
 
 ## 二、Springboot微服务数据库
 ### 0x01、Springboot整合Mybatis
-#### 1、使用Mybatis Generator生成对应的实体类和mapper
+#### 1、使用Mybatis-Generator生成数据访问层
 - 添加generatorConfig.xml文件，修改数据库连接信息
 - 修改pom.xml， 添加plugin
 ```
