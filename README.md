@@ -12,7 +12,7 @@
 <!-- GFM-TOC -->
 
 
-## 一、搭建Springboot多Module项目
+## 一、Springboot多Module微服务项目
 - 1、创建springboot项目，添加多个Module
 - 2、修改父项目pom.xml
    * 修改packaging为pom
@@ -30,7 +30,7 @@
 - 3、修改module pom.xl
    - 修改父项目
    - 修改packaging为jar
-   - buld引入配置文件
+   - build引入配置文件
 ```
     <parent>
         <groupId>com.example</groupId>
@@ -42,30 +42,30 @@
     <packaging>jar</packaging>
     
     <build>
-            <plugins>
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                </plugin>
-            </plugins>
-    
-            <resources>
-                <resource>
-                    <directory>src/main/java</directory>
-                    <includes>
-                        <include>**/*.properties</include>
-                        <include>**/*.xml</include>
-                    </includes>
-                </resource>
-    
-                <resource>
-                    <directory>src/main/resources</directory>
-                    <includes>
-                        <include>**/*.*</include>
-                    </includes>
-                </resource>
-            </resources>
-        </build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
 ```
 
 - 4、添加web依赖
@@ -82,6 +82,12 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 ```
+
+## 二、Springboot微服务数据库
+### 0x01、Springboot整合Mybatis
+- 1、使用Mybatis Generator生成对应的实体类和mapper
+
+
 
 ## 踩坑与答疑
 - 1、rest请求404？
