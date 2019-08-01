@@ -55,4 +55,4 @@
 ```
 项目结构如下：
 
-<img src="https://github.com/DurianCoder/springboot-example/blob/master/notes/imgs/multiModuleProArchitect.png">
+<img src="https://github.com/DurianCoder/springboot-example/blob/master/notes/imgs/multiModuleProArchitect.png" align=center />
