@@ -1,6 +1,6 @@
 ## 1、使用Mybatis-Generator生成数据访问层
-- 在src/main/resources下添加generatorConfig.xml文件，修改数据库连接信息
-- 修改pom.xml， 添加plugin
+- 在src/main/resources下添加[generatorConfig.xml](https://github.com/DurianCoder/springboot-example/blob/master/service-provider/src/main/resources/mybatis-generator/generatorConfig.xml)文件，修改数据库连接信息
+- 修改[pom.xml](https://github.com/DurianCoder/springboot-example/blob/master/service-provider/pom.xml)， 添加plugin
 ```
     <plugin>
         <groupId>org.mybatis.generator</groupId>

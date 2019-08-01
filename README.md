@@ -7,7 +7,7 @@
 
 * [二、Springboot微服务数据库](#二Springboot微服务数据库)
     * [0x01、Springboot整合Mybatis](#0x01Springboot整合Mybatis)
-        * [1、使用Mybatis-Generator生成数据访问层](#1使用Mybatis-Generator生成数据访问层)
+        * 使用Mybatis-Generator生成数据访问层
 
 * [Q&A、踩坑与答疑](#踩坑与答疑)
 
