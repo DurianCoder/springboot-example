@@ -22,6 +22,12 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.2.7</version>
+        </dependency>
+
         <!--devtools实现热加载-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

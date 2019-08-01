@@ -1,11 +1,13 @@
 # springboot-example
    该项目主要用来记录作者学习springboot的过程以及踩的坑
-   
-   
+    
 <!-- GFM-TOC -->
 ## 目录
 * [一、搭建Springboot多Module项目](#一搭建Springboot多Module项目)
 
+* [二、Springboot微服务数据库](#二Springboot微服务数据库)
+    * [0x01、Springboot整合Mybatis](#0x01Springboot整合Mybatis)
+        * [1、使用Mybatis Generator生成对应的实体类和mapper](#1使用Mybatis Generator生成对应的实体类和mapper)
 
 * [Q&A](#踩坑与答疑)
 
@@ -85,8 +87,49 @@
 
 ## 二、Springboot微服务数据库
 ### 0x01、Springboot整合Mybatis
-- 1、使用Mybatis Generator生成对应的实体类和mapper
-
+#### 1、使用Mybatis Generator生成对应的实体类和mapper
+- 添加generatorConfig.xml文件，修改数据库连接信息
+- 修改pom.xml， 添加plugin
+```
+    <plugin>
+        <groupId>org.mybatis.generator</groupId>
+        <artifactId>mybatis-generator-maven-plugin</artifactId>
+        <version>1.3.5</version>
+        <configuration>
+            <configurationFile>src/main/resources/mybatis-generator/generatorConfig.xml</configurationFile>
+            <verbose>true</verbose>
+            <overwrite>true</overwrite>
+        </configuration>
+        <executions>
+            <execution>
+                <id>Generate MyBatis Artifacts</id>
+                <goals>
+                    <goal>generate</goal>
+                </goals>
+            </execution>
+        </executions>
+        <dependencies>
+            <dependency>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-core</artifactId>
+                <version>1.3.5</version>
+            </dependency>
+        </dependencies>
+    </plugin>
+```
+- 添加mybatis依赖
+```
+<dependency>
+    <groupId>org.mybatis</groupId>
+    <artifactId>mybatis</artifactId>
+    <version>3.2.7</version>
+</dependency>
+```
+- 配置Maven生成实体和mapper:
+```
+# 配置到Module目录
+mybatis-generator:generate
+```
 
 
 ## 踩坑与答疑
