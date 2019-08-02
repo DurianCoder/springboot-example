@@ -8,6 +8,9 @@
 * [二、Springboot微服务数据库](#二Springboot微服务数据库)
     * [0x01、Springboot整合Mybatis](#0x01Springboot整合Mybatis)
         * 使用Mybatis-Generator生成数据访问层
+        * springboot整合Mysql单数据源
+        * springboot整合Mysql多数据源
+    * [0x02、Springboot整合Redis](#0x02Springboot整合Redis)
 
 * [Q&A、踩坑与答疑](#踩坑与答疑)
 
@@ -20,6 +23,10 @@
 ## 二、Springboot微服务数据库
 ### 0x01、Springboot整合Mybatis
 - [使用Mybatis-Generator生成数据访问层](https://github.com/DurianCoder/springboot-example/blob/master/notes/Mybatis-Generator生成数据访问层.md)
+- [springboot整合Mysql单数据源](https://github.com/DurianCoder/springboot-example/blob/master/notes/springboot整合Mysql单数据源.md)
+- [springboot整合Mysql多数据源](https://github.com/DurianCoder/springboot-example/blob/master/notes/springboot整合Mysql多数据源.md)
+
+### 0x02、Springboot整合Redis
 
 
 ## 踩坑与答疑
