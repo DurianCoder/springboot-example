@@ -60,9 +60,6 @@ public class DatabaseContextHolder {
 }
 ```
 - 添加[DynamicDataSource类](https://github.com/DurianCoder/springboot-example/blob/master/service-provider/src/main/java/com/example/serviceprovider/mysql/datasource/DynamicDataSource.java)继承AbstractRoutingDataSource
-Tips:
-
-    注意注解@Bean,@Primary,@Qualifier的使用
 ```
 package com.example.serviceprovider.mysql.datasource;
 
@@ -81,6 +78,10 @@ public class DynamicDataSource extends  {
 
 ```
 - [修改MybatisConfig类](https://github.com/DurianCoder/springboot-example/blob/master/service-provider/src/main/java/com/example/serviceprovider/mysql/datasource/MybatisConfig.java)
+
+Tips:
+
+    注意注解@Bean,@Primary,@Qualifier的使用
 ```
 package com.example.serviceprovider.mysql.datasource;
 
@@ -201,6 +202,7 @@ public class MybatisConfig {
 ```
 
 - 添加aop切面，实现数据源自动切换,[DataSourceAspect类](https://github.com/DurianCoder/springboot-example/blob/master/service-provider/src/main/java/com/example/serviceprovider/mysql/datasource/DataSourceAspect.java)
+
 Tips:主要一定要导入aspectj下的包
 ```
 package com.example.serviceprovider.mysql.datasource;
