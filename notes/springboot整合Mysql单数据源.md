@@ -5,7 +5,7 @@
 - [使用Mybatis-Generator生成数据库访问层](https://github.com/DurianCoder/springboot-example/blob/master/notes/Mybatis-Generator生成数据访问层.md)
 
 ## 0x02、Springboot集成Mybatis
-- 添加相关依赖，注意Druid版本
+- 添加相关依赖，注意Druid版本, [pom.xml](https://github.com/DurianCoder/springboot-example/blob/master/common/pom.xml)
 ```
 <!--数据库相关 start -->
 <dependency>
@@ -40,7 +40,7 @@
 <!--数据库相关 end -->
 ```
 - 添加mysql连接配置
-application.properties
+[application.properties](https://github.com/DurianCoder/springboot-example/blob/master/service-provider/src/main/resources/application.properties)
 ```
 # datasouce config
 durian.jdbc.driverClassName = com.mysql.jdbc.Driver
