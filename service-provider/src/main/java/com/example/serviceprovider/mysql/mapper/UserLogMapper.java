@@ -4,7 +4,9 @@ import com.example.serviceprovider.mysql.domain.UserLog;
 import com.example.serviceprovider.mysql.domain.UserLogExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Service;
 
+@Service
 public interface UserLogMapper {
     long countByExample(UserLogExample example);
 

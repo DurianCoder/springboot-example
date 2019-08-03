@@ -1,8 +1,7 @@
-# 配置端口和请求前缀
+# server port and request prefix config
 server:
   port: 8081
   servlet:
     context-path: /
 
-# hot deploy
-spring.devtools.restart.enabled: true
+
