@@ -12,7 +12,7 @@
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://192.168.145.10:3306/durian?useUnicode=true&amp;characterEncoding=utf8"
+                        connectionURL="jdbc:mysql://192.168.145.10:3306/bigdata?useUnicode=true&amp;characterEncoding=utf8"
                         userId="app" password="123456">
 
         </jdbcConnection>
@@ -20,16 +20,16 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.example.serviceprovider.mysql.domain" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.example.serviceprovider.mysql.domain.bigdata" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="com.example.serviceprovider.mysql.mapper" targetProject="src/main/java">
+        <sqlMapGenerator targetPackage="com.example.serviceprovider.mysql.mapper.bigdata" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.example.serviceprovider.mysql.mapper"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.example.serviceprovider.mysql.mapper.bigdata"
                              targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>

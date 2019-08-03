@@ -2,7 +2,9 @@ package com.example.serviceprovider;
 
 import com.example.serviceprovider.mysql.domain.UserLog;
 import com.example.serviceprovider.mysql.domain.UserLogExample;
+import com.example.serviceprovider.mysql.domain.bigdata.User;
 import com.example.serviceprovider.mysql.mapper.UserLogMapper;
+import com.example.serviceprovider.mysql.mapper.bigdata.UserMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +19,16 @@ public class ServiceProviderApplicationTests {
 
     @Autowired
     public UserLogMapper userLogMapper;
+
+    @Autowired
+    private UserMapper userMapper;
+
+    @Test
+    public void testMultiDs() {
+        User user = userMapper.selectByPrimaryKey(1);
+        System.out.println(user.getUserName());
+    }
+
 
     @Test
     public void contextLoads() {

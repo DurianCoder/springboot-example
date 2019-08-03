@@ -49,7 +49,7 @@ durian.jdbc.username = app
 durian.jdbc.password = 123456
 ```
 
-- [编写MybatisConfig类](https://github.com/DurianCoder/springboot-example/blob/master/service-provider/com.example.serviceprovider.mysql.MybatisConfig.java)
+- [编写MybatisConfig类](https://github.com/DurianCoder/springboot-example/blob/master/service-provider/com.example.serviceprovider.mysql.datasource.MybatisConfig.java)
 
 [Druid连接池详细参数配置](https://www.cnblogs.com/MaxElephant/p/8108304.html)
 ```
