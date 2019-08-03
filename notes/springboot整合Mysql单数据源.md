@@ -1,4 +1,5 @@
 # springboot整合Mysql单数据源.md
+本章主要用来记录springboot如何整合mysql
 ## 0x01、搭建数据库环境
 - 安装Mysql
 - 建库建表
