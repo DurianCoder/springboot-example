@@ -1,7 +1,7 @@
 # springboot-example
    该项目主要用来记录作者学习springboot的过程以及踩的坑。
    
-   至于各个组件的详细分析，可以参考作者另外一个项目[Durian-Notes-Java](https://github.com/DurianCoder/Durian-Notes-Java)
+   至于Java核心基础以及分布式多线程、高并发、高可用系统的详细介绍，可以参考作者另外一个项目[Durian-Notes-Java](https://github.com/DurianCoder/Durian-Notes-Java)
     
 <!-- GFM-TOC -->
 ## 目录
