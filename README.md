@@ -1,5 +1,7 @@
 # springboot-example
-   该项目主要用来记录作者学习springboot的过程以及踩的坑
+   该项目主要用来记录作者学习springboot的过程以及踩的坑。
+   
+   至于各个组件的详细分析，可以参考作者另外一个项目[Durian-Notes-Java](https://github.com/DurianCoder/Durian-Notes-Java)
     
 <!-- GFM-TOC -->
 ## 目录
@@ -29,6 +31,8 @@
 - [springboot整合Mysql多数据源](https://github.com/DurianCoder/springboot-example/blob/master/notes/springboot整合Mysql多数据源.md)
 
 ### 0x02、Springboot整合Redis
+-[Springboot集成JedisCluster](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成JedisCluster.md)
+-[Springboot集成GuavaCache实现本地缓存](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成GuavaCache实现本地缓存.md)
 
 
 ## 踩坑与答疑
