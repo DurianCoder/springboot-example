@@ -32,10 +32,10 @@
 - [springboot整合Mysql多数据源](https://github.com/DurianCoder/springboot-example/blob/master/notes/springboot整合Mysql多数据源.md)
 
 ### 0x02、Springboot整合Redis
--[Springboot集成JedisCluster](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成JedisCluster.md)
+- [Springboot集成JedisCluster](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成JedisCluster.md)
 
 ### 0x03、Springboot整合Guava
--[Springboot集成GuavaCache实现本地缓存](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成GuavaCache实现本地缓存.md)
+- [Springboot集成GuavaCache实现本地缓存](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成GuavaCache实现本地缓存.md)
 
 
 ## 踩坑与答疑
