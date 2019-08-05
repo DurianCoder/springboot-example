@@ -19,7 +19,7 @@
         * springboot整合Mysql多数据源
         * mysql用户密码使用密文配置
     * [0x02、Springboot整合Redis](#0x02Springboot整合Redis)
-    * [0x03、Springboot整合Guava](#0x03Springboot整合Guava)
+    * [0x03、Springboot整合Guava](#0x03Springboot整合Guava本地缓存)
 
 * [三、Springboot集成各个中间件](#三Springboot集成各个中间件)
     * [0x01、Springboot整合Rpc框架](#0x01Springboot整合Rpc框架Dubbo)
@@ -46,7 +46,7 @@
 
 ### [0x02、Springboot整合Redis](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成JedisCluster.md)
 
-### 0x03、[Springboot整合Guava本地缓存](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成GuavaCache实现本地缓存.md)
+### [0x03、Springboot整合Guava本地缓存](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成GuavaCache实现本地缓存.md)
 
 
 ## 三、Springboot集成各个中间件
