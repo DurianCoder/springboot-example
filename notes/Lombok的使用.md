@@ -1,5 +1,5 @@
 ## Lombok的使用
-1、Idea安装lombok插件
+### 1、Idea安装lombok插件
 - 下载安装
 
 <img src="https://raw.githubusercontent.com/DurianCoder/springboot-example/master/notes/imgs/lombok-plugin-install-20190803100053.png"/>
@@ -8,7 +8,7 @@
 
 <img src="https://raw.githubusercontent.com/DurianCoder/springboot-example/master/notes/imgs/lombok-support-annotationo-20190803100711.png"/>
 
-2、添加lombok依赖
+### 2、添加lombok依赖
 ```
 <dependency>
     <groupId>org.projectlombok</groupId>
@@ -16,11 +16,11 @@
 </dependency>
 ```
 
-3、配置注解处理器
+### 3、配置注解处理器
 
 <img src="https://raw.githubusercontent.com/DurianCoder/springboot-example/master/notes/imgs/lombok-compile-config-20190803100304.png"/>
 
-4、使用Lombok注解
+### 4、使用Lombok注解
 - 在实体类中使用lombok注解
 
 <img src="https://raw.githubusercontent.com/DurianCoder/springboot-example/master/notes/imgs/lombok-demo-20190803100403.png"/>
