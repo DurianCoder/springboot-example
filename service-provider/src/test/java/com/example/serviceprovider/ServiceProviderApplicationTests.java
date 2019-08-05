@@ -67,7 +67,6 @@ public class ServiceProviderApplicationTests {
     public void contextLoads() {
         List<UserLog> userLogs = userLogMapper.selectByExample(new UserLogExample());
         System.out.println(userLogs.get(0).getLogDetail());
-
     }
 
 }

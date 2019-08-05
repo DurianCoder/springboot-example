@@ -9,7 +9,7 @@ server:
 durian:
   jdbc:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.145.10:3306/durian?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    url: jdbc:mysql://192.168.1.52:3306/durian?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
     username: app
     password: AI7QKmenecZTovilwgPdds6x2qutcjBFzkmoBDkiiUwwili2s7YEjC+sOvI7BjQ7doQHRjzm03Fu0k6x9c+18g==
   config:
@@ -22,7 +22,7 @@ durian:
 bigdata:
   jdbc:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.145.10:3306/bigdata?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    url: jdbc:mysql://192.168.1.52:3306/bigdata?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
     username: app
     password: AI7QKmenecZTovilwgPdds6x2qutcjBFzkmoBDkiiUwwili2s7YEjC+sOvI7BjQ7doQHRjzm03Fu0k6x9c+18g==
   config:
@@ -34,5 +34,5 @@ bigdata:
 # redis config
 redis:
   cluster:
-    servers: 192.168.145.10:7000,192.168.145.10:7001,192.168.145.10:7002,192.168.145.11:7003,192.168.145.11:7004,192.168.145.11:7005
+    servers: 192.168.1.53:5067
     commandTimeout: 5000

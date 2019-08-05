@@ -17,6 +17,7 @@
         * Lombok的使用
         * springboot整合Mysql单数据源
         * springboot整合Mysql多数据源
+        * mysql用户密码使用密文配置
     * [0x02、Springboot整合Redis](#0x02Springboot整合Redis)
     * [0x03、Springboot整合Guava](#0x03Springboot整合Guava)
 
@@ -38,6 +39,7 @@
 - [Lombok的使用](https://github.com/DurianCoder/springboot-example/blob/master/notes/Lombok的使用.md)
 - [springboot整合Mysql单数据源](https://github.com/DurianCoder/springboot-example/blob/master/notes/springboot整合Mysql单数据源.md)
 - [springboot整合Mysql多数据源](https://github.com/DurianCoder/springboot-example/blob/master/notes/springboot整合Mysql多数据源.md)
+- [mysql用户密码使用密文配置](https://github.com/DurianCoder/springboot-example/blob/master/notes/mysql用户密码使用密文配置.md)
 
 ### 0x02、Springboot整合Redis
 - [Springboot集成JedisCluster](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成JedisCluster.md)

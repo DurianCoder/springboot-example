@@ -1,3 +1,39 @@
+# Springboot整合Mysql使用Druid加密用户密码
+## 0x01、使用druid工具生产密文
+使用druid jar包工具生产密码和公钥：`java -cp druid-1.0.26.jar com.alibaba.druid.filter.config.ConfigTools 123456`
+<img src="https://raw.githubusercontent.com/DurianCoder/springboot-example/master/notes/imgs/druid-public-key-1564975567.jpg" />
+
+## 0X02、修改mysql连接属性配置文件
+```
+# durian datasource
+durian:
+  jdbc:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.52:3306/durian?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    username: app
+    password: AI7QKmenecZTovilwgPdds6x2qutcjBFzkmoBDkiiUwwili2s7YEjC+sOvI7BjQ7doQHRjzm03Fu0k6x9c+18g==
+  config:
+    decrypt: true
+    druid:
+      publickey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKFMEqQEFxSq4qmr2prehqVU88+s4qp7kpgn/Yi80rV6DdJCJsxXwXkwJg2dy0jrsndXZq125FcfWJIWrGezXtECAwEAAQ==
+
+
+# bigdata datasource
+bigdata:
+  jdbc:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.52:3306/bigdata?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    username: app
+    password: AI7QKmenecZTovilwgPdds6x2qutcjBFzkmoBDkiiUwwili2s7YEjC+sOvI7BjQ7doQHRjzm03Fu0k6x9c+18g==
+  config:
+    decrypt: true
+    druid:
+      publickey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKFMEqQEFxSq4qmr2prehqVU88+s4qp7kpgn/Yi80rV6DdJCJsxXwXkwJg2dy0jrsndXZq125FcfWJIWrGezXtECAwEAAQ==
+
+```
+
+## 0X03、修改MybatisConfig类
+```
 package com.example.serviceprovider.mysql.datasource;
 
 import com.alibaba.druid.pool.DruidDataSource;
@@ -97,3 +133,8 @@ public class MybatisConfig {
         return fb.getObject();
     }
 }
+
+```
+
+## 0X04、测试
+此时使用druid加密mysql用户密码已完成，可以使用单元测试进行测试。
