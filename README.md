@@ -22,8 +22,7 @@
     * [0x03、Springboot整合Guava](#0x03Springboot整合Guava)
 
 * [三、Springboot集成各个中间件](#三Springboot集成各个中间件)
-    * [0x01、Springboot整合Rpc框架](#0x01Springboot整合Rpc框架)
-        - Springboot整合Rpc框架Dubbo
+    * [0x01、Springboot整合Rpc框架](#0x01Springboot整合Rpc框架Dubbo)
 
 * [Q&A、踩坑与答疑](#踩坑与答疑)
 
@@ -46,18 +45,12 @@
 - [mysql用户密码使用密文配置](https://github.com/DurianCoder/springboot-example/blob/master/notes/mysql用户密码使用密文配置.md)
 
 ### [0x02、Springboot整合Redis](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成JedisCluster.md)
-- [Springboot集成JedisCluster](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成JedisCluster.md)
-    - springboot整合RedisCluster
-    - 基于redis实现分布式锁
-### 0x03、Springboot整合Guava
-- [Springboot集成GuavaCache实现本地缓存](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成GuavaCache实现本地缓存.md)
+
+### 0x03、[Springboot整合Guava本地缓存](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成GuavaCache实现本地缓存.md)
 
 
 ## 三、Springboot集成各个中间件
-### 0x01、Springboot整合Rpc框架
-- [Springboot整合Rpc框架Dubbo](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot整合Rpc框架Dubbo.md)
-
-### 0x02、Springboot整合消息队列
+### 0x01、[Springboot整合Rpc框架Dubbo](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot整合Rpc框架Dubbo.md)
 - Springboot整合消息队列Kafka
 
 ## 四、服务框架篇
