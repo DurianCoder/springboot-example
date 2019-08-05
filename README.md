@@ -21,6 +21,10 @@
     * [0x02、Springboot整合Redis](#0x02Springboot整合Redis)
     * [0x03、Springboot整合Guava](#0x03Springboot整合Guava)
 
+* [三、Springboot集成各个中间件](#三Springboot集成各个中间件)
+    * [0x01、Springboot整合Rpc框架](#0x01Springboot整合Rpc框架)
+        - Springboot整合Rpc框架Dubbo
+
 * [Q&A、踩坑与答疑](#踩坑与答疑)
 
 <!-- GFM-TOC -->
@@ -51,7 +55,7 @@
 
 ## 三、Springboot集成各个中间件
 ### 0x01、Springboot整合Rpc框架
-- Springboot整合Rpc框架Dubbo
+- [Springboot整合Rpc框架Dubbo](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot整合Rpc框架Dubbo.md)
 
 ### 0x02、Springboot整合消息队列
 - Springboot整合消息队列Kafka

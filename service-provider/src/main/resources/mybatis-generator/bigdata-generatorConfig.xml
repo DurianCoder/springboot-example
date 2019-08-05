@@ -3,16 +3,16 @@
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
-    <!--修改为mysql-connector-java-**.jar路径-->
-    <classPathEntry
-            location="D:\apache-maven-repository\mysql\mysql-connector-java\5.1.36\mysql-connector-java-5.1.36.jar"/>
+    <!--修改为mysql-connector-java-**.jar路径, Todo 修改为本地mysql-connector-java-5.1.35.jar路径、Mysql地址-->
+    <!--<classPathEntry location="D:\apache-maven-repository\mysql\mysql-connector-java\5.1.36\mysql-connector-java-5.1.36.jar"/>-->
+    <classPathEntry location="D:\Bqs\Pro\mybatis-generator-core-1.3.2\lib\mysql-connector-java-5.1.35.jar"/>
     <context id="DB2Tables" targetRuntime="MyBatis3">
         <commentGenerator>
             <property name="suppressDate" value="true"/>
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://192.168.145.10:3306/bigdata?useUnicode=true&amp;characterEncoding=utf8"
+                        connectionURL="jdbc:mysql://192.168.1.52:3306/bigdata?useUnicode=true&amp;characterEncoding=utf8"
                         userId="app" password="123456">
 
         </jdbcConnection>
