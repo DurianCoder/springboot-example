@@ -3,7 +3,6 @@
    
    至于Java核心基础以及分布式多线程、高并发、高可用系统的详细介绍，可以参考作者另外一个项目[Durian-Notes-Java](https://github.com/DurianCoder/Durian-Notes-Java)
     
-<!-- GFM-TOC -->
 ## 一、Springboot微服务项目简介
    * [创建Springboot多Module微服务项目](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot创建多Module微服务项目.md)
    * 常用注解以及启动原理
@@ -20,19 +19,16 @@
 ## 三、Springboot集成各个中间件
    * [Springboot整合Rpc框架Dubbo](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot整合Rpc框架Dubbo.md)
 
-## [Q&A、踩坑与答疑](https://github.com/DurianCoder/springboot-example/blob/master/notes/踩坑与答疑.md)
-
-<!-- GFM-TOC -->
-
-### Todo：
-* 四、服务框架篇
+## 四、服务框架篇
    - 服务注册发现
    - 统一配置管理
    - 微服务通信
    - 限流降级
    - 全链路追踪
 
-* 五、监控部署篇
+## 五、监控部署篇
    - ELK日志及系统监控
    - 微服务持续部署
+
+## [Q&A、踩坑与答疑](https://github.com/DurianCoder/springboot-example/blob/master/notes/踩坑与答疑.md)
 
