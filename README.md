@@ -45,7 +45,7 @@
 - [springboot整合Mysql多数据源](https://github.com/DurianCoder/springboot-example/blob/master/notes/springboot整合Mysql多数据源.md)
 - [mysql用户密码使用密文配置](https://github.com/DurianCoder/springboot-example/blob/master/notes/mysql用户密码使用密文配置.md)
 
-### 0x02、Springboot整合Redis
+### [0x02、Springboot整合Redis](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成JedisCluster.md)
 - [Springboot集成JedisCluster](https://github.com/DurianCoder/springboot-example/blob/master/notes/Springboot集成JedisCluster.md)
     - springboot整合RedisCluster
     - 基于redis实现分布式锁
