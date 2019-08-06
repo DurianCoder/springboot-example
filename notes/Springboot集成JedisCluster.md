@@ -253,3 +253,6 @@ private T runWithRetries(int slot, int attempts, boolean tryRandomNode, boolean 
     }
 }
 ```
+
+## 0x07、参考链接
+- [redis mget性能分析](https://www.jianshu.com/p/172b39244c85)
