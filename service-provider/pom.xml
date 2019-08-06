@@ -45,6 +45,32 @@
         </dependency>
     </dependencies>
 
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <profile.active>dev</profile.active>
+            </properties>
+        </profile>
+        <profile>
+            <id>st</id>
+            <properties>
+                <profile.active>st</profile.active>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <profile.active>prod</profile.active>
+            </properties>
+        </profile>
+    </profiles>
+
+
     <build>
         <plugins>
             <plugin>
@@ -53,7 +79,8 @@
                 <version>1.3.5</version>
                 <configuration>
                     <!--<configurationFile>src/main/resources/mybatis-generator/generatorConfig.xml</configurationFile>-->
-                    <configurationFile>src/main/resources/mybatis-generator/bigdata-generatorConfig.xml</configurationFile>
+                    <configurationFile>src/main/resources/mybatis-generator/bigdata-generatorConfig.xml
+                    </configurationFile>
                     <verbose>true</verbose>
                     <overwrite>true</overwrite>
                 </configuration>
@@ -81,8 +108,10 @@
         </plugins>
 
         <resources>
+
             <resource>
                 <directory>src/main/java</directory>
+                <filtering>true</filtering>
                 <includes>
                     <include>**/*.properties</include>
                     <include>**/*.xml</include>
@@ -91,6 +120,7 @@
 
             <resource>
                 <directory>src/main/resources</directory>
+                <filtering>true</filtering>
                 <includes>
                     <include>**/*.*</include>
                 </includes>

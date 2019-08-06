@@ -1,4 +1,17 @@
 # 设置配置文件
 spring:
   profiles:
-    active: st
+    active: @profile.active@
+
+  #shardingsphere分表策略
+#  shardingsphere:
+#    sharding:
+#      tables:
+#        user_log:
+#          table-strategy:
+#            standard:
+#              sharding-column: store_time
+#              precise-algorithm-class-name: com.example.serviceprovider.mysql.datasource.algorithm.UserLogPreciseAlgorithm
+#              range-algorithm-class-name: com.example.serviceprovider.mysql.datasource.algorithm.UserLogRangeAlgorithm
+#          actual-data-nodes: ds.user_log_$->{2019..2020}_$->{1..12}
+#      default-data-source-name: ds

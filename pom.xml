@@ -25,6 +25,7 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <sharding-sphere.version>4.0.0-RC1</sharding-sphere.version>
     </properties>
 
     <dependencies>

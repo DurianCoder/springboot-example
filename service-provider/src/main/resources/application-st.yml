@@ -4,6 +4,12 @@ server:
   servlet:
     context-path: /
 
+# redis config
+redis:
+  cluster:
+    servers: 192.168.1.53:5067
+    commandTimeout: 5000
+
 
 # durian datasource
 durian:
@@ -31,8 +37,55 @@ bigdata:
       publickey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKFMEqQEFxSq4qmr2prehqVU88+s4qp7kpgn/Yi80rV6DdJCJsxXwXkwJg2dy0jrsndXZq125FcfWJIWrGezXtECAwEAAQ==
 
 
-# redis config
-redis:
-  cluster:
-    servers: 192.168.1.53:5067
-    commandTimeout: 5000
+
+
+## Druid public key
+#publickey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKp4F3efSmoNtPfMJImESjLUEYuRA4yle36u+1TbMW3VfRW6rry5bj7qpCSaxj/B8Gibr00vTW8H9MZvqh9CXCsCAwEAAQ==
+#
+##分表数据源 datasource
+#spring:
+#  shardingsphere:
+#    datasource:
+#      names: ds,ds1
+#      ds:
+#        type: com.alibaba.druid.pool.DruidDataSource
+#        url: jdbc:mysql://192.168.1.52:3306/durian?useSSL=false&useUnicode=true&characterEncoding=utf8
+#        username: app
+#        password: kk/vLwqeuW1LdV/H89MU6zonCJzgzvvFvmd03z8qLsE/tCxyuPOUIAueQsDHZzzbdZG0gqH4I3s/3zE1mkVZlg==
+#        initial-size: 5
+#        min-idle: 5
+#        max-active: 20
+#        max-wait: 60000
+#        time-between-eviction-runs-millis: 60000
+#        min-evictable-idle-time-millis: 300000
+#        validation-query: select 1 from dual
+#        test-while-idle: true
+#        test-on-borrow: false
+#        test-on-return: false
+#        filters: stat,wall,log4j,config
+#        log-slow-sql: true
+#
+#        connection-properties: config.decrypt=true;config.decrypt.key=${publickey}
+#
+#      ds1:
+#        type: com.alibaba.druid.pool.DruidDataSource
+#        url: jdbc:mysql://192.168.1.52:3306/bigdata?useSSL=false&useUnicode=true&characterEncoding=utf8
+#        username: app
+#        password: kk/vLwqeuW1LdV/H89MU6zonCJzgzvvFvmd03z8qLsE/tCxyuPOUIAueQsDHZzzbdZG0gqH4I3s/3zE1mkVZlg==
+#        initial-size: 5
+#        min-idle: 5
+#        max-active: 20
+#        max-wait: 60000
+#        time-between-eviction-runs-millis: 60000
+#        min-evictable-idle-time-millis: 300000
+#        validation-query: select 1 from dual
+#        test-while-idle: true
+#        test-on-borrow: false
+#        test-on-return: false
+#        filters: stat,wall,log4j,config
+#        log-slow-sql: true
+#        connection-properties: config.decrypt=true;config.decrypt.key=${publickey}
+#
+#    props:
+#      sql:
+#        show: true

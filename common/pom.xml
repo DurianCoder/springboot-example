@@ -22,6 +22,25 @@
 
     <dependencies>
 
+        <!--&lt;!&ndash; for spring boot &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.shardingsphere</groupId>-->
+            <!--<artifactId>sharding-jdbc-spring-boot-starter</artifactId>-->
+            <!--<version>${sharding-sphere.version}</version>-->
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash; for spring namespace &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.shardingsphere</groupId>-->
+            <!--<artifactId>sharding-jdbc-spring-namespace</artifactId>-->
+            <!--<version>${sharding-sphere.version}</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.6.1</version>
+        </dependency>
         <dependency>
             <groupId>com.alibaba.boot</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
@@ -116,6 +135,12 @@
             <artifactId>mybatis-spring</artifactId>
             <version>1.2.2</version>
         </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>org.mybatis.spring.boot</groupId>-->
+            <!--<artifactId>mybatis-spring-boot-starter</artifactId>-->
+            <!--<version>1.1.1</version>-->
+        <!--</dependency>-->
 
         <!--数据库相关 end -->
 
