@@ -68,7 +68,7 @@ public class ServiceProviderApplicationTests {
     @Test
     public void testGuava() {
         User user = localCache.getUser(1);
-        System.out.println(user.getUserName());
+        System.out.println(user.getClass());
     }
 
     /**
@@ -87,7 +87,7 @@ public class ServiceProviderApplicationTests {
     @Test
     public void testMultiDs() {
         User user = userMapper.selectByPrimaryKey(1);
-        System.out.println(user.getUserName());
+        System.out.println(user.getClass());
     }
 
 
